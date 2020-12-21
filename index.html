@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Project6</title>
+</head>
+<body>
+    <!--large screen-->
+    <nav class="navbar">
+        <img class="logo" src="logo.png">
+        <ul class="navbar__links">
+            <li class="navbar__link">Home</li>
+            <li class="navbar__link">About Us</li>
+            <li class="navbar__link">Event</li>
+            <li class="navbar__link">Customer</li>
+            <li class="navbar__link">Contact Us</li>
+        </ul>
+    </nav>
+    <!--Medium and small screen-->
+    <!--navbar-->
+    <nav class="navbar__small">
+        <input type="checkbox" class="checkbox" id="click">
+        <!--sidebar-->
+        <div class="sidebar">
+            <label for="click">
+                <div class="line line__1"></div>
+                <div class="line line__2"></div>
+                <div class="line line__3"></div>
+            </label>
+            <div class="year">
+                <p>2020</p>
+            </div>
+        </div>
+        <!--sidebar end-->
+        <!--navigation-->
+        <nav class="navigation">
+            <div class="navigation__header">
+                <img class="navigation__heading" src="logo.png">
+                <form action="" class="navigation__search">
+                    <input type="text" placeholder="Search" class="navigation__search__input">
+                    <button class="navigation__search__btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation_item">
+                    <a href="#" class="navigation__link">Home</a>
+                </li>
+                <li><class="navigation_item">
+                    <a href="#" class="navigation__link">About Us</a>
+                </li>
+                <li><class="navigation_item">
+                    <a href="#" class="navigation__link">Events</a>
+                </li>
+                <li><class="navigation_item">
+                    <a href="#" class="navigation__link">Customers</a>
+                </li>
+                <li><class="navigation_item">
+                    <a href="#" class="navigation__link">Contact</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>&copy;2020, Project6</p>
+            </div>
+        </nav>
+        <!--navigation end-->        
+    </nav>
+    <!--navbar end-->
+</body>
+</html>
