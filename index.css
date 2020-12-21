@@ -7,29 +7,29 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 :root {
-  --mainColor--: #0c8d5c;
-  --navbar--: #63ecb8;
+  --mainColor--: #ffffff;
+  --navbar--: #000000;
 }
 
-.logo {
-  font-size: 1.8rem;
-  padding-left: 2rem;
-}
 .navbar {
   display: flex;
   background-color: var(--navbar--);
   justify-content: space-between;
   align-items: center;
+  color: var(--mainColor--);
 }
 
-.navbar >.logo{
-  height: 50px;
-  width: 125px;
-  margin-top: 5px;
+.navbar > .logo {
+  height: 45px;
+  width: 45px;
+  margin-top: 4px;
+  background: transparent;
+  margin-bottom: 4px;
+  margin-left: 30px;
 }
 
 .navbar__links {
@@ -41,8 +41,8 @@ body {
 }
 
 .navbar__link {
-  margin: auto 1.2rem;
-  font-size: 1.2rem;
+  margin: auto 1rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 992px) {
@@ -74,16 +74,15 @@ body {
   }
 
   .menu__icons:hover > .line {
-    width: 2.5rem;
+    width: 2.8rem;
     transition: 0.5s;
   }
 
   .line {
     height: 0.2rem;
     width: 2.5rem;
-    background-color: darkblue;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 0.6rem;
-    margin-top: 0.7rem;
   }
 
   .line__1,
@@ -95,10 +94,11 @@ body {
   .year {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color: rgb(65, 63, 63);
+    color: rgb(255, 255, 255);
   }
 
   .navigation {
+    padding-top: auto;
     left: -32rem;
     position: fixed;
     width: 40rem;
@@ -108,7 +108,7 @@ body {
         rgba(34, 32, 41, 1),
         rgba(32, 34, 41, 0.8)
       ),
-      url(../img/nav-bg.jpg) center no-repeat;
+      url(photo.jpg) center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -116,11 +116,16 @@ body {
     align-items: center;
     transition: left 0.5s cubic bezier(1, 0, 0, 1);
   }
+  .navigation__header {
+    padding-top: 2rem;
+    display: block;
+    text-align: center;
+  }
 
   .navigation__heading {
-    height: 60px;
-    width: 150px;
-    margin-left: 125px;
+    height: 40px;
+    width: 125px;
+    padding-bottom: 1.5rem;
   }
 
   .navigation__search {
@@ -147,13 +152,14 @@ body {
 
   .navigation__search__btn {
     border: none;
-    color: var(--mainColor--);
+    color: black;
     font-size: 1.7rem;
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
     outline: none;
+    background: transparent;
   }
 
   .navigation__search__btn > .fa {
@@ -163,7 +169,7 @@ body {
   .navigation__list {
     list-style: none;
     padding: 0;
-    height: 28rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +210,7 @@ body {
   }
 
   .navigation__link:hover {
-    color: var(--mainColor--);
+    color: blue;
   }
 
   .navigation__link::after,
@@ -221,6 +227,7 @@ body {
 
   .checkbox:checked ~ .navigation {
     left: 8rem;
+    height: 100%;
   }
 
   .checkbox {
@@ -259,11 +266,7 @@ body {
   .navigation__link {
     font-size: 1.2rem;
   }
-  .navigation__heading {
-    font-size: 2.5rem;
-  }
   .checkbox:checked ~ .navigation {
     left: 5rem;
-    top: 5rem;
   }
 }
