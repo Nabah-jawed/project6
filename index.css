@@ -715,8 +715,17 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .header {
+    width: 100%;
+  }
+  .line__4{
+    width: auto;
+  }
+  .banner__btn {
+    align-self: center;
+  }
   .navigation {
-    width: 28rem;
+    width: 32rem;
   }
   .navigation__search__input {
     width: 20rem;
@@ -733,6 +742,7 @@ body {
   }
   .about__us {
     padding-bottom: 15rem;
+    padding-right: 30rem;
   }
   .aboutus__heading {
     font-size: 2.5rem;
